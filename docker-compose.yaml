@@ -24,9 +24,6 @@ services:
       - REDIS_HOST=$REDIS_HOST
       - REDIS_PORT=$REDIS_PORT
   nginx:
-    depends_on:
-      - client
-      - server
     image: "shonen/multi-nginx-10-14"
     mem_limit: 128m
     hostname: nginx
